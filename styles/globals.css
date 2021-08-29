@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+@tailwind components;
+
+@layer components {
+  .button {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out;
+  }
+}
+
 html,
 body {
   -webkit-tap-highlight-color: transparent;
